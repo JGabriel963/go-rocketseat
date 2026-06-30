@@ -84,6 +84,8 @@ func main() {
 	// } else {
 	// 	fmt.Println("x is greater than 5")
 	// }
+	// Switch
+	do(1)
 }
 
 func sayHello() {
@@ -110,6 +112,19 @@ func divide(a int, b int) (res int, rem int) {
 	res = a / b
 	rem = a % b
 	return res, rem
+}
+
+func do(x int) {
+	switch x {
+	case 1:
+		fmt.Println("One")
+	case 2:
+		fmt.Println("Two")
+	case 3:
+		fmt.Println("Three")
+	default:
+		fmt.Println("Other")
+	}
 }
 
 // go run main.go
